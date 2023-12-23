@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #232323;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Roboto'
+}
+
+.nav-window-open {
+  position: fixed; 
+  top: 120px;
+  left: 200px;
+  height: 80%;
+  width: 80%;
+  background-color: #232323;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow:  0 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+body.nav-open {
+  background-color: #eff2e8;
+}
+
+.nav-icon {
+  position: relative;
+  width: 42px;
+  height: 32px;
+  cursor: pointer;
+  border:none;
+  background: none;
+  z-index: 99;
+}
+
+.nav-icon span {
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  background: #eff2e8;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon span:nth-child(odd) {
+  left: 0;
+  border-radius: 9px 0 0 9px;
+}
+
+.nav-icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(2) {
+  top:0
+}
+
+.nav-icon span:nth-child(3),
+.nav-icon span:nth-child(4) {
+  top: 13px;
+}
+
+
+.nav-icon span:nth-child(5),
+.nav-icon span:nth-child(6) {
+  top: 26px;
+}
+
+.nav-open .nav-icon span:nth-child(1),
+.nav-open .nav-icon span:nth-child(6) {
+  transform: rotate(45deg)
+}
+
+.nav-open .nav-icon span:nth-child(2),
+.nav-open .nav-icon span:nth-child(5) {
+  transform: rotate(-45deg)
+}
+
+.nav-open .nav-icon span:nth-child(1) {
+  top: -300px;
+  left: 5px;
+}
+
+.nav-open .nav-icon span:nth-child(2) {
+  top: -300px;
+  left: calc(50% - 5px);
+}
+
+.nav-open .nav-icon span:nth-child(3) {
+  left: -100%;
+  opacity: 0;
+}
+
+.nav-open .nav-icon span:nth-child(4) {
+  left: 150%;
+  opacity: 0;
+}
+
+.nav-open .nav-icon span:nth-child(5) {
+  top: -290px;
+  left: 5px;
+}
+
+.nav-open .nav-icon span:nth-child(6) {
+  top: -290px;
+  left: calc(50% - 5px);
+}
+
+
+
+
+
+
+
